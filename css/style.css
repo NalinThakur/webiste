@@ -176,6 +176,7 @@ body.fade-out {
 	}
 }
 .main-warp {
+	margin-bottom:0;
 	position: relative;
 	z-index: 5;
 	background: #fff;
@@ -586,7 +587,7 @@ body.fade-out {
   Footer Section
 =======================*/
 .footer-section {
-	position: fixed;
+	/*position: fixed;*/
 	/* top:2px; */
 	width: 100%;
 	bottom: 0;

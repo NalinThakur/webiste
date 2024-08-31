@@ -120,9 +120,9 @@ $(window).on('load', function() {
 	/*------------------
 		FOOTER
 	--------------------*/
-	var fh = $('.footer-section').height();
-		fh = fh + 140;
-	$('.main-warp').css('margin-bottom', fh);
+	// var fh = $('.footer-section').height();
+	// 	fh = fh + 140;
+	// $('.main-warp').css('margin-bottom', fh);
 
 	
 
