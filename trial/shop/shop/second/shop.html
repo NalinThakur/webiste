@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SHOP</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.x.x/css/all.min.css">
+    <link href="img/logo.png" rel="shortcut icon" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="shortcut icon" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Custom Styles */
+        .prod-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .item-inner {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .item-info {
+            margin-top: 10px;
+        }
+
+        /* Side extension container */
+        .side-extension {
+            position: fixed;
+            top: 0;
+            left: -150px; /* Initially hide the extension */
+            width: 150px;
+            height: 100%;
+            background-color: #007bff;
+            padding-top: 60px;
+            transition: 0.3s; /* Smooth transition */
+            z-index: 1000; /* Ensure it stays above other content */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Add shadow for visibility */
+        }
+
+        /* Button styles inside the extension */
+        .side-extension .Olamilekan-button-1 {
+            display: block;
+            width: 120px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #fff;
+            color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .side-extension .Olamilekan-button-1:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Image grid layout */
+        .intro-bg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .intro-bg {
+                grid-template-columns: 1fr;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- header starts -->
+    <header class="header-section" style="background-color: blue;">
+        <div class="logo">
+            <img src="logo.png" alt="logo"><!-- Logo -->
+        </div>
+        <div class="responsive"><i class='bx bx-menu'></i></div>
+        <!-- Navigation -->
+        <ul class="menu-list">
+            <li>
+                <div class="cart-container">
+                    <a href="" class="transition-link">
+                        <i class='bx bx-home cart-icon'></i>
+                    </a>
+                    <div class="cart-text">Home</div>
+                </div>
+            </li>
+            <li>
+                <div class="cart-container">
+                    <a href="" class="transition-link">
+                        <i class='bx bx-user cart-icon'></i>
+                    </a>
+                    <div class="cart-text">Profile</div>
+                </div>
+            </li>
+            <li>
+                <div class="cart-container">
+                    <a href="" class="transition-link">
+                        <i class='bx bx-shopping-bag cart-icon'></i>
+                    </a>
+                    <div class="cart-text">View Cart</div>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <!-- header ends -->
+
+    <!-- Side extension -->
+    <div class="side-extension" id="side-extension">
+        <button class="Olamilekan-button-1">Compost</button>
+        <button class="Olamilekan-button-1">Insect</button>
+        <button class="Olamilekan-button-1">Pest</button>
+    </div>
+
+    <!-- shop layout -->
+    <section class="intro-section fix" id="home">
+        <div class="intro-bg">
+            <!-- Product Items -->
+            <div class="col-6 h-100">
+                <a class="shop-item" href="compost1.jpg">
+                    <img class="prod-img" src="compost1.jpg" alt="not loaded">
+                    <div class="item-inner">
+                        <div class="item-info">
+                            <h2>name1</h2>
+                            <h3>info1</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 h-100">
+                <a class="shop-item" href="compost2.jpg">
+                    <img class="prod-img" src="compost2.jpg" alt="loading">
+                    <div class="item-inner">
+                        <div class="item-info">
+                            <h2>name2</h2>
+                            <h3>info2</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 h-100">
+                <a class="shop-item" href="compost3.jfif">
+                    <img class="prod-img" src="compost3.jfif" alt="loading">
+                    <div class="item-inner">
+                        <div class="item-info">
+                            <h2>name3</h2>
+                            <h3>info3</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 h-100">
+                <a class="shop-item" href="compost1.jpg">
+                    <img class="prod-img" src="compost1.jpg" alt="">
+                    <div class="item-inner">
+                        <div class="item-info">
+                            <h2>name4</h2>
+                            <h3>info4</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 h-100">
+                <a class="shop-item" href="compost2.jpg">
+                    <img class="prod-img" src="compost2.jpg" alt="">
+                    <div class="item-inner">
+                        <div class="item-info">
+                            <h2>name5</h2>
+                            <h3>info5</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 h-100">
+                <a class="shop-item" href="compost3.jfif">
+                    <img class="prod-img" src="compost3.jfif" alt="">
+                    <div class="item-inner">
+                        <div class="item-info">
+                            <h2>name6</h2>
+                            <h3>info6</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- shop ends -->
+
+    <!-- footer -->
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        const sideExtension = document.getElementById('side-extension');
+        let startX;
+
+        document.body.addEventListener('touchstart', function (event) {
+            startX = event.touches[0].clientX;
+        });
+
+        document.body.addEventListener('touchmove', function (event) {
+            const touchX = event.touches[0].clientX;
+            const screenWidth = window.innerWidth;
+
+            // Swipe right (open) if touch starts near the left edge and swipes towards right
+            if (startX < 50 && touchX > startX) {
+                sideExtension.style.left = '0';
+            }
+
+            // Swipe left (close) if touch moves beyond half screen width
+            if (touchX > screenWidth / 2) {
+                sideExtension.style.left = '-150px';
+            }
+        });
+    </script>
+</body>
+
+</html>
