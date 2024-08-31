@@ -183,6 +183,9 @@ body.fade-out {
 .responsive {
 	display: none;
 }
+
+ /* HEADER SECTON */
+ 
 .header-section {
 	position: absolute;
 	top: 0;
@@ -248,44 +251,37 @@ body.fade-out {
 =======================*/
 
 /* signup-button */
-.Mahekjain-btn-2 a {
+
+/* Button Styling */
+.Mahekjain-btn-2 button {
     position: relative;
     display: inline-block;
-    padding: 10px 10px;
-    margin: 30px 0 60px;
-    color: #03e9f4;
-    text-decoration: none;
+    padding: 10px 20px; /* Adjust padding to your preference */
+    margin: 0;
+    color: #03f45f;
+    background: transparent;
+    border: none;
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     overflow: hidden;
-    margin-right: 10px;
-	/* border-style: dotted; */
-	border-width: 0.2px;
+    cursor: pointer;
+    border: 0.2px dotted transparent; /* Can be customized */
 }
 
-.Mahekjain-btn-2 a:hover {
+.Mahekjain-btn-2 button:hover {
     background: #03e9f4;
     color: #050801;
-    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-        0 0 200px #03e9f4;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-.Mahekjain-btn-2 a:nth-child(1) {
-    filter: hue-rotate(270deg);
-}
-
-.Mahekjain-btn-2 a:nth-child(2) {
-    filter: hue-rotate(110deg);
-}
-
-.Mahekjain-btn-2 a span {
+.Mahekjain-btn-2 button span {
     position: absolute;
     display: block;
 }
 
-.Mahekjain-btn-2 a span:nth-child(1) {
+.Mahekjain-btn-2 button span:nth-child(1) {
     top: 0;
     left: 0;
     width: 100%;
@@ -298,19 +294,17 @@ body.fade-out {
     0% {
         left: -100%;
     }
-
-    50%,
-    100% {
+    50%, 100% {
         left: 100%;
     }
 }
 
-.Mahekjain-btn-2 a span:nth-child(2) {
+.Mahekjain-btn-2 button span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #03e9f4);
+    background: linear-gradient(180deg, transparent, #03f447);
     animation: Mahekjain-btn-animate2 1s linear infinite;
     animation-delay: 0.25s;
 }
@@ -319,19 +313,17 @@ body.fade-out {
     0% {
         top: -100%;
     }
-
-    50%,
-    100% {
+    50%, 100% {
         top: 100%;
     }
 }
 
-.Mahekjain-btn-2 a span:nth-child(3) {
+.Mahekjain-btn-2 button span:nth-child(3) {
     bottom: 0;
     right: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
+    background: linear-gradient(270deg, transparent, #03f467);
     animation: Mahekjain-btn-animate3 1s linear infinite;
     animation-delay: 0.5s;
 }
@@ -340,30 +332,26 @@ body.fade-out {
     0% {
         right: -100%;
     }
-
-    50%,
-    100% {
+    50%, 100% {
         right: 100%;
     }
 }
 
-.Mahekjain-btn-10 a span:nth-child(4) {
+.Mahekjain-btn-2 button span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: animate4 1s linear infinite;
+    background: linear-gradient(360deg, transparent, #03f480);
+    animation: Mahekjain-btn-animate4 1s linear infinite;
     animation-delay: 0.75s;
 }
 
-@keyframes animate4 {
+@keyframes Mahekjain-btn-animate4 {
     0% {
         bottom: -100%;
     }
-
-    50%,
-    100% {
+    50%, 100% {
         bottom: 100%;
     }
 }
