@@ -26,7 +26,7 @@ document.getElementById("googleSignIn").addEventListener("click", () => {
             const user = result.user;
             console.log("User signed in: ", user);
             // Redirect to your desired page after sign-in
-            window.location.href = "dashboard.html";
+            window.location.href = "../index.html";
         })
         .catch((error) => {
             console.error("Error during sign-in: ", error);
@@ -44,7 +44,7 @@ document.getElementById("signUpForm").addEventListener("submit", async (event) =
         const user = userCredential.user;
         console.log("User signed up: ", user);
         // Redirect or perform actions
-        window.location.href = "dashboard.html";
+        window.location.href = "../index.html";
     } catch (error) {
         console.error("Error during sign-up: ", error);
     }
